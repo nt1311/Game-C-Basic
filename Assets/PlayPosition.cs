@@ -6,9 +6,7 @@ public class PlayPosition : MonoBehaviour
 {
     float playerPosx;
     List<GameObject> minions;// Tạo biến, chưa khỏi tạo 
-
-    GameObject minionPerfab;
-    public GameObject maxionPerfab;
+    public GameObject minionPerfab;
     // Start is called before the first frame update
     private void Start()
     {
@@ -19,8 +17,6 @@ public class PlayPosition : MonoBehaviour
     void Update()
     {
         this.playerPosx = transform.position.x;// khởi tạo
-
-     
         int spawnLocation = 7;
         if (this.playerPosx >= spawnLocation)
             this.Spawn();
@@ -35,12 +31,16 @@ public class PlayPosition : MonoBehaviour
         Debug.Log("Spawn");
         if (this.minions.Count >= 7) return;
         int index = this.minions.Count +1;
-        GameObject minion = new GameObject("Minion #" + index);
+        GameObject minion = Instantiate(this.minionPerfab);
+        minion.name = "Minionprefab #" + index;
+
+        minion.transform.position = transform.position; // lấy vị trí hiện tại của nhân vật
+
         MinionScript minionScript = minion.AddComponent<MinionScript>();
         minionScript.SetPosition(index);
         this.minions.Add(minion);
      }
     void NotSpawn()
     {
-     }
+    }
 }
