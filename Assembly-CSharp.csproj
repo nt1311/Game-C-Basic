@@ -64,6 +64,7 @@
     <Compile Include="Assets\FollowPlayer.cs" />
     <Compile Include="Assets\EnemyController.cs" />
     <Compile Include="Assets\DamageReceiver.cs" />
+    <Compile Include="Assets\EnemySpawner.cs" />
     <Compile Include="Assets\MinionScript.cs" />
     <Compile Include="Assets\Despawner.cs" />
     <Compile Include="Assets\DamageSender.cs" />

@@ -356,6 +356,7 @@
 "Assets/DamageSender.cs"
 "Assets/Despawner.cs"
 "Assets/EnemyController.cs"
+"Assets/EnemySpawner.cs"
 "Assets/FollowPlayer.cs"
 "Assets/MinionScript.cs"
 "Assets/PlayPosition.cs"
