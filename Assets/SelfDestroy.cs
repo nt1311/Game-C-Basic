@@ -8,7 +8,7 @@ public class SelfDestroy : MonoBehaviour
     void Start()
     {
         // thự hiện câu lệnh sau (2s) 
-        Invoke("Destroy", 13f);
+        Invoke("Destroy", 12f);
     }
     private void Destroy()
     {

@@ -62,7 +62,11 @@
   <ItemGroup>
     <Compile Include="Assets\SelfDestroy.cs" />
     <Compile Include="Assets\FollowPlayer.cs" />
+    <Compile Include="Assets\EnemyController.cs" />
+    <Compile Include="Assets\DamageReceiver.cs" />
     <Compile Include="Assets\MinionScript.cs" />
+    <Compile Include="Assets\Despawner.cs" />
+    <Compile Include="Assets\DamageSender.cs" />
     <Compile Include="Assets\PlayPosition.cs" />
   </ItemGroup>
   <ItemGroup>
