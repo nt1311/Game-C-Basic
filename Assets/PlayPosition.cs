@@ -43,7 +43,7 @@ public class PlayPosition : MonoBehaviour
         
         
 
-        Debug.Log("Spawn");
+      //  Debug.Log("Spawn");
         if (this.minions.Count >= 7) return;
         int index = this.minions.Count +1;
         GameObject minion = Instantiate(this.minionPerfab);

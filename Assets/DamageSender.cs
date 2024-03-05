@@ -31,6 +31,6 @@ public class DamageSender : MonoBehaviour
 
         this.enemyController.despawner.Despawn();
 
-        Debug.Log(collision.name);
+      //  Debug.Log(collision.name);
     }
 }
